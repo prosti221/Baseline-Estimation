@@ -27,7 +27,8 @@ To calculate the baseline, we need not only the disparity and focal length, whic
 We also need the depth of each feature correspondence to use the following equation: $${Z} = f\frac{b_x}{d} \rightarrow b_x = \frac{Zd}{f} $$
 Where Z is our depth, d is the disparity, f is the focal length, and b is the baseline(distance between the cameras).
 
-The baseline calculation function works properly now after estimating the depth per frame using a pre-trained CNN.
+The baseline calculation function works properly now after estimating the relative depth per frame using a pre-trained CNN.
+However this is only up to some unknown scale. 
 
 # Usage
 
